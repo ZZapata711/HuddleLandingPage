@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap');
+
+
+    *{
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+/* .border-test{
+    border: 1px solid black;
+} */
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('../images/bg-mobile.svg');
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0;
+}
+
+
+/* Mobile Layout and Styling */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    
+}
+
+.logo{
+    margin: 3em 0 3em 2em;
+}
+
+.logo img{
+    width: 9em;
+}
+
+.illustration{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    color: white;
+    margin-bottom: 3em;
+}
+
+.main h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.75em;
+    margin-top: 1em;
+    margin-bottom: .75em;
+}
+
+.main p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+.main button{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(257, 40%, 49%);
+    width: 70%;
+    max-width: 210px;
+    padding: 1em 3em;
+    border-radius: 3em;
+    border: none;
+    box-shadow: 0px 5px 5px hsl(257, 42%, 40%);
+    align-self: center;
+    transition: all .3s ease-in;
+}
+
+.socials{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+.socials a{
+    text-decoration: none;
+}
+.icon{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .5em;
+    transition: all .3s ease-in;
+}
+
+.icon-facebook{
+    padding-right: .75em;
+    padding-left: .75em;
+}
+
+footer{
+    color: white;
+}
+
+/* Responsive Layout */
+    @media (min-width: 570px){
+        body{
+            background-image: url("./images/bg-desktop.svg");
+            background-size: cover;
+        }
+        .logo{
+            margin-left: 0;
+        }
+
+        .logo img{
+            width: 12em;
+            height: auto;
+        }
+
+        .container{
+            align-items: flex-start;
+        }
+
+        .main{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .illustration img{
+            max-width: 100%;
+            height: auto;
+        }
+
+    }
+/* Active States */
+.main button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color:white;
+}
+.icon:hover{
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
